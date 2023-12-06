@@ -41,10 +41,6 @@ body {
     margin-top: 32px;
 }
 
-.dt-center{
-    targets: [ 0, 1, 2, 3, 4, 5, 6, 7 ];
-}
-
 .card {
     margin-bottom: 24px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
@@ -73,6 +69,10 @@ body {
 
 .Select--multi .Select-value-label {
     line-height: 32px;
+}
+
+.Select-input{
+    width: 160px;	
 }
 
 .menu-title {
