@@ -7,8 +7,6 @@ import sqlalchemy
 import pandas as pd
 from datetime import *
 import numpy as np
-import itertools
-import pyodbc
 
 #app = dash.Dash(__name__)
 
@@ -40,7 +38,8 @@ query = """SELECT NOMBREMALL,NOMBRESUBGERENTE,CODCONTRATO,NOMBRELOCATARIO,TAMACT
             AND INCREMENTOSUGERIDO>0
             AND DIFTAM_TAMGRUPO<=0
             """
-df = pd.read_sql(query, engine)
+df = pd.read_csv('mi_analisis.csv')
+#df = pd.read_sql(query, engine)
 df.columns = ['MALL','SUBGERENTE','CONTRATO','LOCATARIO','TAM ACTUAL','INCREMENTO SUGERIDO','TAM SUGERIDA','TAM PROPUESTA']
 df_original = df.copy()
 
