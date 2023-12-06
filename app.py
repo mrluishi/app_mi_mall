@@ -23,13 +23,6 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # Create a connection to the database
 print(datetime.now())
-# engine = sqlalchemy.create_engine(
-#     'mssql+pyodbc://' + 
-#     'testLogin1' + ':' + 
-#     'Prueba1&' + '@'+ 
-#     'srvsqlmallaventura.database.windows.net' + ':1433/' + 
-#     'dbsqlmallaventura' + 
-#     '?DRIVER=' + 'ODBC Driver 17 for SQL Server')
 
 # Read data from SQL table
 query = """SELECT NOMBREMALL,NOMBRESUBGERENTE,CODCONTRATO,NOMBRELOCATARIO,TAMACTUAL,INCREMENTOSUGERIDO,TAMSUGERIDA,NULL TAMPROPUESTA
