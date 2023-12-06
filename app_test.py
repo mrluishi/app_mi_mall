@@ -88,7 +88,7 @@ app.layout = html.Div(
                             id="contrato-filter",
                             options=[
                                 {
-                                    "label": contrato.title(),
+                                    "label": contrato,
                                     "value": contrato,
                                 }
                                 for contrato in list_contratos
@@ -106,7 +106,7 @@ app.layout = html.Div(
                             id="locatario-filter",
                             options=[
                                 {
-                                    "label": locatario.title(),
+                                    "label": locatario,
                                     "value": locatario,
                                 }
                                 for locatario in list_locatarios
